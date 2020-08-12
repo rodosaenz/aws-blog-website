@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="w-responsive mx-auto p-3 mt-2">
+
+  <div class="d-flex flex-wrap justify-content-between">
+    <a>
+    <div class="ng-star-inserted" *ngFor="let post of posts">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="view overlay z-depth-3">
+            <img class="img-fluid" src="https://via.placeholder.com/800x500" alt="First sample image">
+            <a>
+              <div class="mask rgba-white-slight waves-effect waves-light" mdbwaveseffect=""></div>
+            </a></div>
+        </div>
+        <div class="col-lg-7 mb-4"><a href="" class="blue-text">
+            <h6 class="pb-1"><i class="fa fa-hash"></i><strong> #Lifestyle #Spring #Angular</strong></h6>
+          </a>
+          <h4 class="mb-4"><strong>{{post.title}}</strong></h4>
+          <p>{{post.body}}</p>
+          <p>by <a><strong>Rodolfo Sáenz</strong></a>,10/08/2020</p>
+        </div>
+      </div>
+      <hr class="mb-5">
+    </div>
+    </a>
+
+  </div>
+</div>
+
+<app-footer></app-footer>
